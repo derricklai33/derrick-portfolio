@@ -1,0 +1,31 @@
+body {
+    /* Setting body background colour */
+    background-color: $black;
+}
+
+.homepage-container {
+    display:flex;
+    flex-direction: column;
+    background-color: $oxford-blue;
+    margin: 5vh;
+    border-radius: 15px;
+    min-height: 90vh;
+    
+
+    .homepage-img {
+        margin: 20px auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            /* Boxshadow generated from cssmatic.com */
+            -webkit-box-shadow: 0px 0px 14px 6px rgba(252, 163, 17,0.75);
+            -moz-box-shadow: 0px 0px 14px 6px rgba(252, 163, 17,0.75);
+            box-shadow: 0px 0px 14px 6px rgba(252, 163, 17,0.75);
+            border-radius: 15px;
+            width: 200px;
+        }
+    }
+}    
