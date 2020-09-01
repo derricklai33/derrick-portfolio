@@ -43,4 +43,71 @@ body {
   border-radius: 15px;
   width: 200px;
 }
+
+.homepage-container .homepage-main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Button hover animation */
+}
+
+.homepage-container .homepage-main .homepage-pharagraph {
+  margin: 10px;
+  text-align: center;
+}
+
+.homepage-container .homepage-main .homepage-pharagraph h1 {
+  color: #e5e5e5ff;
+  font-family: "Kanit", sans-serif;
+}
+
+.homepage-container .homepage-main .homepage-pharagraph p {
+  color: #ffffffff;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.homepage-container .homepage-main a {
+  font-size: 20px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  color: #ffffffff;
+  background: #fca311ff;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.homepage-container .homepage-main a:hover {
+  background-color: #e5e5e5ff;
+  color: #000000ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.homepage-container .homepage-main a:after {
+  content: '\f061';
+  font-family: 'FontAwesome';
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  -webkit-transition: margin 0.5s, opacity 0.3s;
+  transition: margin 0.5s, opacity 0.3s;
+}
+
+.homepage-container .homepage-main a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
