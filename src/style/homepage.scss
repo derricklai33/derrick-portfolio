@@ -7,9 +7,9 @@ body {
     display:flex;
     flex-direction: column;
     background-color: $oxford-blue;
-    margin: 5vh;
+    margin: 7.5vh 5vh;
     border-radius: 15px;
-    min-height: 90vh;
+    min-height: 85vh;
     
 
     .homepage-img {
@@ -49,12 +49,14 @@ body {
             p  {
                 color: $white;
                 font-family: $font-2;
+                font-size: 28px;
             }
         }
 
         /* Button hover animation */
         a {
             font-size: 20px;
+            font-family: $font-3;
             text-align: center;
             margin: 10px 0;
             outline: none;
@@ -92,7 +94,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center; 
-        margin: 10vh 20vw;
+        margin: 10vh 15vw;
 
         i   {
             color: $white;
