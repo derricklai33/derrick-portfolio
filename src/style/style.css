@@ -17,9 +17,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #14213dff;
-  margin: 5vh;
+  margin: 7.5vh 5vh;
   border-radius: 15px;
-  min-height: 90vh;
+  min-height: 85vh;
 }
 
 .homepage-container .homepage-img {
@@ -76,10 +76,12 @@ body {
 .homepage-container .homepage-main .homepage-pharagraph p {
   color: #ffffffff;
   font-family: "Nunito Sans", sans-serif;
+  font-size: 28px;
 }
 
 .homepage-container .homepage-main a {
   font-size: 20px;
+  font-family: "Scope One", serif;
   text-align: center;
   margin: 10px 0;
   outline: none;
@@ -123,11 +125,64 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10vh 20vw;
+  margin: 30px 15vw;
 }
 
 .homepage-container .social-media-icons i {
   color: #ffffffff;
   font-size: 40px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 7.5vh;
+  background-color: white;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 30%;
+}
+
+nav .nav-links li {
+  list-style: none;
+}
+
+nav .nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+nav .burger div {
+  width: 25px;
+  height: 3px;
+  margin: 3px;
+  background-color: #fca311ff;
+}
+
+.mainpage-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #14213dff;
+  margin: 0 5vh 7.5vh 5vh;
+  border-radius: 15px;
+  min-height: 85vh;
 }
 /*# sourceMappingURL=style.css.map */

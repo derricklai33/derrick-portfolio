@@ -1,0 +1,41 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 7.5vh;
+    background-color: white;
+    font-family: $font-2;
+
+    .nav-links   {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+
+        li  {
+            list-style: none;
+        }
+
+        a   {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        margin: 3px;
+        background-color: $orange-web;
+    }
+}
+
+.mainpage-container {
+    display:flex;
+    flex-direction: column;
+    background-color: $oxford-blue;
+    margin: 0 5vh 7.5vh 5vh;
+    border-radius: 15px;
+    min-height: 85vh;
+
+   
+}
