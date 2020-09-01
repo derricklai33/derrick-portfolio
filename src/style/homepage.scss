@@ -43,6 +43,7 @@ body {
                 
                 color: $platinum;
                 font-family: $font-1;
+                margin: 10px;
             }
     
             p  {
@@ -55,6 +56,7 @@ body {
         a {
             font-size: 20px;
             text-align: center;
+            margin: 10px 0;
             outline: none;
             text-decoration: none;
             color: $white;
@@ -84,5 +86,17 @@ body {
                 
             }
         }    
+    }
+
+    .social-media-icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        margin: 10vh 20vw;
+
+        i   {
+            color: $white;
+            font-size: 40px;
+        }
     }
 }    
