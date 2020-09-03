@@ -200,8 +200,8 @@ body {
   min-height: 77.5vh;
 }
 
-/* Start of media query settings for mobile */
-@media screen and (max-width: 750px) {
+/* Start of media query settings for mobile & tablet */
+@media screen and (max-width: 800px) {
   body {
     overflow-x: hidden;
   }
@@ -249,11 +249,26 @@ body {
   }
 }
 
+/* End of media query settings for mobile & tablet */
+/* Media query for between mobile & tablet for more responsiveness */
+@media screen and (min-width: 801px) {
+  .nav-links {
+    width: 90%;
+  }
+}
+
+/* Start of media query for browser */
+@media screen and (min-width: 1024px) {
+  .nav-links {
+    width: 70%;
+  }
+}
+
+/* End of media query for browser */
 .nav-active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
 
-/* End of media query settings for mobile */
 /* End of Navbar settings */
 /*# sourceMappingURL=style.css.map */
