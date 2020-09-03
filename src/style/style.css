@@ -133,7 +133,7 @@ body {
   font-size: 40px;
 }
 
-nav {
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,33 +143,46 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   min-height: 7.5vh;
-  background-color: white;
+  background-color: #fca311ff;
   font-family: "Nunito Sans", sans-serif;
 }
 
-nav .nav-links {
+.navbar .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 30%;
 }
 
-nav .nav-links li {
+.navbar .nav-links li {
   list-style: none;
 }
 
-nav .nav-links a {
+.navbar .nav-links a {
   color: white;
   text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
-nav .burger div {
+.navbar .burger {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar .burger div {
   width: 25px;
   height: 3px;
   margin: 3px;
-  background-color: #fca311ff;
+  background-color: #000000ff;
+}
+
+.home-button i {
+  color: #ffffffff;
+  font-size: 20px;
 }
 
 .mainpage-container {
@@ -181,8 +194,60 @@ nav .burger div {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #14213dff;
-  margin: 0 5vh 7.5vh 5vh;
+  margin: 7.5vh 5vh;
   border-radius: 15px;
   min-height: 85vh;
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    overflow-x: hidden;
+  }
+  .mainpage-container {
+    margin: 0 5vh 7.5vh 5vh;
+  }
+  .navbar {
+    background-color: #000000ff;
+  }
+  .navbar .burger {
+    display: block;
+    margin-left: 40vw;
+  }
+  .navbar .burger div {
+    background-color: #fca311ff;
+  }
+  .home-button i {
+    color: #fca311ff;
+    font-size: 20px;
+  }
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 92.5vh;
+    top: 7.5vh;
+    background-color: #fca311ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 /*# sourceMappingURL=style.css.map */
