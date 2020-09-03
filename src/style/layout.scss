@@ -1,3 +1,4 @@
+/* Start of Navbar settings */
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -19,7 +20,7 @@
             text-decoration: none;
             letter-spacing: 2px;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 24px;
             text-transform: uppercase;
         }
     }
@@ -44,22 +45,24 @@
     }
 }
 
-.mainpage-container {
+.page-container {
     display: flex;
     flex-direction: column;
     background-color: $oxford-blue;
     margin: 7.5vh 5vh;
     border-radius: 15px;
-    min-height: 85vh;
+    min-height: 77.5vh;
 }
 
+/* Start of media query settings for mobile */ 
 @media screen and (max-width:750px){
     body    {
         overflow-x: hidden;
     }
 
-    .mainpage-container {
+    .page-container {
         margin: 0 5vh 7.5vh 5vh;
+        min-height: 85vh;
     }
 
     .navbar  {
@@ -100,3 +103,9 @@
 .nav-active {
     transform: translateX(0%);
 }
+/* End of media query settings for mobile */
+
+@media screen and (max-width: 1024px){
+    
+}
+/* End of Navbar settings */
