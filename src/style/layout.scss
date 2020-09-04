@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 7.5vh;
+    height: 7.5vh;
     background-color: $orange-web;
     font-family: $font-2;
 
@@ -18,12 +18,17 @@
         a   {
             color: white;
             text-decoration: none;
-            letter-spacing: 2px;
             font-weight: bold;
             font-size: 24px;
-            text-transform: uppercase;
-        }
+
+            &:hover {
+                color: $black;
+                transition-duration: 0.5s;
+            }
+        }      
     }
+
+   
 
     .burger {
         display: none;
@@ -38,10 +43,17 @@
     }    
 }
 
+
+
 .home-button    {
     i  {
         color: $white;
-        font-size: 20px;
+        font-size: 30px;
+
+        &:hover {
+            color: $black;
+            transition-duration: 0.5s;
+        }
     }
 }
 
@@ -67,6 +79,8 @@
 
     .navbar  {
         background-color: $black;
+        position: fixed;
+        width: 100%;
     
         .burger {
             display: block;
@@ -75,6 +89,7 @@
             div {
                 background-color: $orange-web;
             }
+
         }
     }
 
@@ -104,16 +119,26 @@
 
 /* Media query for between mobile & tablet for more responsiveness */
 @media screen and (min-width: 801px){
-    .nav-links  {
-        width: 90%;
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        .nav-links  {
+            width: 90%;
+        }
     }
+    
 
     .container-positioner   {
         display: flex;
         justify-content: center;
+        width: 100%;
 
         .page-container {
             width: 50vw;
+            margin-top: 15vh;
         }
     }
 }
@@ -122,15 +147,17 @@
 /* Start of media query for browser */
 @media screen and (min-width: 1024px){
     .nav-links  {
-        width: 70%;
+        width: 70% !important;
     }
 
     .container-positioner   {
         display: flex;
         justify-content: center;
+        width: 100%;
 
         .page-container {
             width: 60vw;
+            
         }
     }
     
@@ -139,5 +166,15 @@
 
 .nav-active {
     transform: translateX(0%);
+    body  {
+        overflow-y: none;
+    }
+}
+
+.scrolling-active  {
+    background-color: rgba(252, 163, 17, 1);
+    box-shadow: 0 3px 1rem rgba(255,255,255,.3);
+    height: 6vh;
+    transition-duration: 0.3s;
 }
 /* End of Navbar settings */
