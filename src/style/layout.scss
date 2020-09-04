@@ -107,6 +107,15 @@
     .nav-links  {
         width: 90%;
     }
+
+    .container-positioner   {
+        display: flex;
+        justify-content: center;
+
+        .page-container {
+            width: 50vw;
+        }
+    }
 }
 
 
@@ -115,6 +124,16 @@
     .nav-links  {
         width: 70%;
     }
+
+    .container-positioner   {
+        display: flex;
+        justify-content: center;
+
+        .page-container {
+            width: 60vw;
+        }
+    }
+    
 }
 /* End of media query for browser */
 
