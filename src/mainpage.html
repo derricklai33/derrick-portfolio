@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Nunito+Sans&family=Scope+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
+    <div id="top">
         <!-- Start of responsive side navbar -->
         <nav class="navbar">
             <!-- Home button icon -->
@@ -17,7 +18,7 @@
             <!-- Nav links for navbar -->
             <ul class="nav-links">
                 <li>
-                    <a href ="">Home</a>
+                    <a href ="mainpage.html">Home</a>
                 </li>
                 <li>
                     <a href ="">About</a>
@@ -41,29 +42,39 @@
         </nav>
         <!-- End of responsive side navbar -->
 
-        <!-- Start of mainpage contents-->
-        <!-- Flexbox container for mainpage -->
+        
+        <!-- Flexbox container for positioning -->
         <div class=container-positioner>
+            <!-- Start of mainpage contents-->
             <div class="page-container">
-                <article>
-                    <p>Hi there!</p>
-                    <p>Welcome to my <strong>Portoflio</strong></p>
+                <article id="mainpage-content">
+                    <h2>Hi there!</h2>
+                    <p>Welcome to my <strong>Portoflio!</strong></p>
                     <p>My name is Derrick and I am an aspiring full stack student developer!</p>
                     <p>Below are some of the programs that I work with:</p>
-    
+                    
+                    <!-- Skill icons (SVG) -->
                     <ul class="skill-icon">
-                        <li><i class="fab fa-html5"></i></li>
-                        <li><i class="fab fa-css3"></i></li>
-                        <li><img src="/docs/ruby.svg"></li>
-                        <li><img src="/docs//ruby-on-rails.svg"></li>
+                        <li>
+                            <img src="../docs/html-5.png">
+                        </li>
+                        <li>
+                            <img src="../docs/css.png">
+                        </li>
+                        <li>
+                            <img src="../docs/ruby.png">
+                        </li>
+                        <li>
+                            <img src="../docs/rails.png">
+                        </li>
                     </ul>
     
-                    <p>Navigate around with the burger icon and back to the start page by pressing the home button!</p>
+                    <h6 id="mobile-only">Navigate around with <img src="../docs/burger-icon.png"> up <a href="#top">top</a>!</h6>
                 </article>
+                <!-- End of mainpage contents --> 
             </div>
-            <!-- End of mainpage contents -->   
         </div>
-        
+    </div>    
 </body>
 
 <!-- Script for enabling fontawesome and javascript-->

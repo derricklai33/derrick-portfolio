@@ -146,14 +146,13 @@ body {
   height: 7.5vh;
   background-color: #fca311;
   font-family: "Nunito Sans", sans-serif;
+  /* Burger icon configuration */
 }
 
 .navbar .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .navbar .nav-links li {
@@ -165,6 +164,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 24px;
+  /* Mouse hover effect */
 }
 
 .navbar .nav-links a:hover {
@@ -185,6 +185,7 @@ body {
   background-color: #000000ff;
 }
 
+/* Home icon configuration */
 .home-button i {
   color: #ffffff;
   font-size: 30px;
@@ -196,6 +197,8 @@ body {
           transition-duration: 0.5s;
 }
 
+/* End of Navbar settings */
+/* Container for contents settings */
 .page-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,8 +223,8 @@ body {
     min-height: 85vh;
   }
   .navbar {
-    background-color: #000000ff;
-    position: fixed;
+    background-color: #000000ff !important;
+    position: static;
     width: 100%;
   }
   .navbar .burger {
@@ -235,8 +238,14 @@ body {
     color: #fca311;
     font-size: 20px;
   }
+  .home-button i:hover {
+    color: #fca311;
+  }
+  /* Slide out sidebar configurations */
   .nav-links {
     position: fixed;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     right: 0px;
     height: 92.5vh;
     top: 7.5vh;
@@ -262,7 +271,7 @@ body {
 }
 
 /* End of media query settings for mobile & tablet */
-/* Media query for between mobile & tablet for more responsiveness */
+/* Start of media query for between mobile & tablet for more responsiveness */
 @media screen and (min-width: 801px) {
   .navbar {
     position: fixed;
@@ -272,6 +281,8 @@ body {
   }
   .navbar .nav-links {
     width: 90%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .container-positioner {
     display: -webkit-box;
@@ -283,15 +294,21 @@ body {
     width: 100%;
   }
   .container-positioner .page-container {
-    width: 50vw;
+    width: 70vw;
     margin-top: 15vh;
   }
 }
 
+/* End of media query for between mobile & tablet for more responsiveness */
 /* Start of media query for browser */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .nav-links {
-    width: 70% !important;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+  }
+  .nav-links a {
+    margin: 0 5vh;
   }
   .container-positioner {
     display: -webkit-box;
@@ -308,13 +325,14 @@ body {
 }
 
 /* End of media query for browser */
+/* Start of Javascript functions */
 .nav-active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
 
-.nav-active body {
-  overflow-y: none;
+.nav-active2 {
+  position: fixed;
 }
 
 .scrolling-active {
@@ -326,5 +344,107 @@ body {
           transition-duration: 0.3s;
 }
 
-/* End of Navbar settings */
+/* End of Javascript functions */
+#mainpage-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 90vw;
+  margin: 2vh 2vw;
+}
+
+#mainpage-content h2 {
+  display: block;
+  color: #e5e5e5ff;
+  font-size: 28px;
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  margin: 2vh 2vw;
+}
+
+#mainpage-content p {
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  color: #e5e5e5ff;
+  font-size: 24px;
+  text-align: center;
+  margin: 2vh 2vw;
+}
+
+#mainpage-content h6 {
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  color: #e5e5e5ff;
+  font-size: 20px;
+  text-align: center;
+  margin: 2vh 2vw;
+}
+
+#mainpage-content h6 img {
+  height: 20px;
+  width: 20px;
+}
+
+#mainpage-content h6 a {
+  text-decoration: none;
+  color: #e5e5e5ff;
+}
+
+#mainpage-content .skill-icon {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fca311;
+  border-radius: 10px;
+}
+
+#mainpage-content .skill-icon li {
+  display: inline-block;
+}
+
+#mainpage-content .skill-icon li img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+@media screen and (min-width: 801) {
+  #mainpage-content h2 {
+    font-size: 32px;
+  }
+  #mainpage-content p {
+    font-size: 28px;
+  }
+  #mainpage-content #mobile-only {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
