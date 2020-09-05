@@ -338,6 +338,7 @@ body {
 }
 
 /* End of Javascript functions */
+/* Start of settings for mobile by default */
 #mainpage-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -355,11 +356,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Only shows up on browser pixels */
 }
 
 #mainpage-content h1 {
   display: block;
-  color: #e5e5e5ff;
+  color: #fca311;
   font-size: 28px;
   font-family: "Kanit", sans-serif;
   text-align: center;
@@ -420,14 +422,17 @@ body {
 }
 
 #mainpage-content .skill-icon li img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin: 20px;
 }
 
+/* End of mobile settings by default */
+/* Start of media query for browser */
 @media screen and (min-width: 801px) {
   #mainpage-content {
     width: 50vw;
+    /* Only shows up on mobile pixels */
   }
   #mainpage-content h1 {
     font-size: 36px;
@@ -446,5 +451,88 @@ body {
   #mainpage-content .skill-icon {
     margin: 5vh;
   }
+  #mainpage-content .skill-icon li img {
+    width: 200px;
+    height: 200px;
+  }
 }
+
+/* End of media query for browser */
+/* Start of mobile setting by default */
+#aboutme-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#aboutme-content img {
+  border-radius: 15px;
+  width: 70vw;
+}
+
+#aboutme-content h1 {
+  display: block;
+  color: #fca311;
+  font-size: 28px;
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  margin: 2vh 2vw;
+}
+
+#aboutme-content h2 {
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  color: #000000ff;
+  font-size: 24px;
+  text-align: center;
+  margin: 2vh 5vw;
+  background-color: #fca311;
+}
+
+#aboutme-content p {
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  color: #e5e5e5ff;
+  font-size: 18px;
+  text-align: center;
+  margin: 2vh 2vw;
+  padding: 0 2vw;
+  text-decoration: none;
+}
+
+#aboutme-content p a {
+  color: #e5e5e5ff;
+}
+
+/* End of mobile setting by default */
+/* Start of media query for browser */
+@media screen and (min-width: 801px) {
+  #aboutme-content img {
+    width: 40vw;
+  }
+  #aboutme-content h1 {
+    font-size: 36px;
+  }
+  #aboutme-content h2 {
+    font-size: 32px;
+  }
+  #aboutme-content p {
+    font-size: 20px;
+  }
+}
+
+/* End of media query for browser */
 /*# sourceMappingURL=style.css.map */

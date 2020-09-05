@@ -1,3 +1,4 @@
+/* Start of settings for mobile by default */
 #mainpage-content   {
     display: flex;
     flex: wrap;
@@ -8,7 +9,7 @@
 
     h1  {
         display: block;
-        color: $platinum;
+        color: $orange-web;
         font-size: 28px;
         font-family: $font-1;
         text-align: center;
@@ -36,7 +37,7 @@
             color: $platinum;
         }
     }
-
+    /* Only shows up on browser pixels */
     #desktop-only  {
         display: none;
         font-size: 32px;
@@ -60,15 +61,17 @@
             display: inline-block;
 
             img {
-                width: 200px;
-                height: 200px;
+                width: 150px;
+                height: 150px;
                 margin: 20px;
             }
         }
     }
 
 }
+/* End of mobile settings by default */
 
+/* Start of media query for browser */
 @media screen and (min-width: 801px){
     #mainpage-content   {
         width: 50vw;
@@ -82,7 +85,8 @@
             font-size: 32px;
             margin: 3vh 3vw;  
         }
-
+        
+        /* Only shows up on mobile pixels */
         #mobile-only  {
             display: none;
         }
@@ -93,7 +97,14 @@
 
         .skill-icon  {
             margin: 5vh;    
+
+            li  {
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
         }
     }  
 }
-
+/* End of media query for browser */
