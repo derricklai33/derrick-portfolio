@@ -12,12 +12,14 @@ const navSilde = () => {
 const navbarScroll = () => {
 
     const navbar = document.querySelector('.navbar');
+
     window.addEventListener('scroll', function () {    
         if (window.innerWidth > 800) {
-            navbar.classList.toggle('scrolling-active', window.scrollY > 0);
+            navbar.classList.toggle('scrolling-active',window.scrollY > 0);
         }
     });
 }
+
 
 navSilde();
 navbarScroll();

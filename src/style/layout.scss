@@ -141,7 +141,7 @@
         width: 100%;
 
         .page-container {
-            width: 70vw;
+            width: 50vw;
             margin-top: 15vh;
         }
     }
@@ -156,18 +156,7 @@
         a   {
             margin:0 5vh;
         }
-    }
-
-    .container-positioner   {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-
-        .page-container {
-            width: 60vw;     
-        }
-    }
-    
+    } 
 }
 /* End of media query for browser */
 
@@ -178,6 +167,7 @@
 
 .nav-active2  {
     position: fixed;
+    height: 7.5vh;
 }
 
 .scrolling-active  {
@@ -185,5 +175,9 @@
     box-shadow: 0 3px 1rem rgba(255,255,255,.3);
     height: 6vh;
     transition-duration: 0.3s;
+}
+
+.navbar-reset   {
+    height: 7.5vh;
 }
 /* End of Javascript functions */

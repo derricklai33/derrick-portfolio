@@ -294,7 +294,7 @@ body {
     width: 100%;
   }
   .container-positioner .page-container {
-    width: 70vw;
+    width: 50vw;
     margin-top: 15vh;
   }
 }
@@ -310,18 +310,6 @@ body {
   .nav-links a {
     margin: 0 5vh;
   }
-  .container-positioner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-  }
-  .container-positioner .page-container {
-    width: 60vw;
-  }
 }
 
 /* End of media query for browser */
@@ -333,6 +321,7 @@ body {
 
 .nav-active2 {
   position: fixed;
+  height: 7.5vh;
 }
 
 .scrolling-active {
@@ -342,6 +331,10 @@ body {
   height: 6vh;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+}
+
+.navbar-reset {
+  height: 7.5vh;
 }
 
 /* End of Javascript functions */
@@ -362,11 +355,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 90vw;
-  margin: 2vh 2vw;
 }
 
-#mainpage-content h2 {
+#mainpage-content h1 {
   display: block;
   color: #e5e5e5ff;
   font-size: 28px;
@@ -384,23 +375,20 @@ body {
   margin: 2vh 2vw;
 }
 
-#mainpage-content h6 {
-  display: block;
-  font-family: "Nunito Sans", sans-serif;
-  color: #e5e5e5ff;
-  font-size: 20px;
-  text-align: center;
-  margin: 2vh 2vw;
-}
-
-#mainpage-content h6 img {
+#mainpage-content #mobile-only img {
   height: 20px;
   width: 20px;
 }
 
-#mainpage-content h6 a {
+#mainpage-content #mobile-only a {
   text-decoration: none;
   color: #e5e5e5ff;
+}
+
+#mainpage-content #desktop-only {
+  display: none;
+  font-size: 32px;
+  margin: 3vh 3vw;
 }
 
 #mainpage-content .skill-icon {
@@ -424,6 +412,7 @@ body {
   border-width: 2px;
   border-color: #fca311;
   border-radius: 10px;
+  margin: 2vh;
 }
 
 #mainpage-content .skill-icon li {
@@ -433,18 +422,29 @@ body {
 #mainpage-content .skill-icon li img {
   width: 200px;
   height: 200px;
-  margin: 10px;
+  margin: 20px;
 }
 
-@media screen and (min-width: 801) {
-  #mainpage-content h2 {
-    font-size: 32px;
+@media screen and (min-width: 801px) {
+  #mainpage-content {
+    width: 50vw;
+  }
+  #mainpage-content h1 {
+    font-size: 36px;
+    margin: 3vh 3vw;
   }
   #mainpage-content p {
-    font-size: 28px;
+    font-size: 32px;
+    margin: 3vh 3vw;
   }
   #mainpage-content #mobile-only {
     display: none;
+  }
+  #mainpage-content #desktop-only {
+    display: block;
+  }
+  #mainpage-content .skill-icon {
+    margin: 5vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
