@@ -13,12 +13,19 @@ const navbarScroll = () => {
 
     const navbar = document.querySelector('.navbar');
 
-    window.addEventListener('scroll', function () {    
-        if (window.innerWidth > 800) {
+    var mq = window.matchMedia( "(max-width: 800px)" );
+
+    if (mq.matches){
+        window.addEventListener('scroll', function () {
             navbar.classList.toggle('scrolling-active',window.scrollY > 0);
-        }
-    });
+        });
+    }
+
+    else{
+        
+    }
 }
+
 
 
 navSilde();
