@@ -83,11 +83,11 @@ body {
   font-size: 20px;
   font-family: "Scope One", serif;
   text-align: center;
-  margin: 10px 0;
+  margin: 2vh 0;
   outline: none;
   text-decoration: none;
   color: #ffffff;
-  background: #fca311;
+  background: #e5e5e5ff;
   padding: 10px;
   border-radius: 5%;
 }
@@ -125,7 +125,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 30px 15vw;
+  width: 65%;
+  margin-bottom: 2vh;
 }
 
 .homepage-container .social-media-icons i {
@@ -531,6 +532,165 @@ body {
   }
   #aboutme-content p {
     font-size: 20px;
+  }
+}
+
+/* End of media query for browser */
+#contactme-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Social media icons */
+}
+
+#contactme-content h1 {
+  display: block;
+  color: #fca311;
+  font-size: 28px;
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  margin: 2vh 2vw;
+}
+
+#contactme-content h2 {
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  color: #000000ff;
+  font-size: 24px;
+  text-align: center;
+  margin: 2vh 5vw;
+  background-color: #fca311;
+}
+
+#contactme-content p {
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  color: #e5e5e5ff;
+  font-size: 18px;
+  text-align: center;
+  margin: 2vh 2vw;
+  padding: 0 2vw;
+  text-decoration: none;
+}
+
+#contactme-content .formspree {
+  display: inline-block;
+  background: #fca311;
+  width: 60vw;
+  padding: 1vh;
+  border-radius: 15px;
+  margin: 5vh 1vh;
+  /* Start of button animation */
+  /* End of button animation */
+}
+
+#contactme-content .formspree label {
+  text-align: left;
+  font-family: "Scope One", serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#contactme-content .formspree input {
+  display: block;
+  width: 95%;
+  border-radius: 5px;
+  background-color: #e5e5e5ff;
+}
+
+#contactme-content .formspree textarea {
+  display: block;
+  width: 95%;
+  height: 10vh;
+  border-radius: 5px;
+  background-color: #e5e5e5ff;
+}
+
+#contactme-content .formspree button {
+  font-size: 20px;
+  font-family: "Scope One", serif;
+  text-align: center;
+  margin: 10px 0;
+  outline: none;
+  text-decoration: none;
+  color: #ffffff;
+  background: #000000ff;
+  padding: 0 1vw;
+  border-radius: 5%;
+}
+
+#contactme-content .formspree button:hover {
+  background-color: #e5e5e5ff;
+  color: #000000ff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#contactme-content .formspree button:after {
+  content: '\f061';
+  font-family: 'FontAwesome';
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  -webkit-transition: margin 0.5s, opacity 0.3s;
+  transition: margin 0.5s, opacity 0.3s;
+}
+
+#contactme-content .formspree button:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+  text-decoration: none;
+}
+
+#contactme-content .contactme-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  margin-bottom: 2vh;
+}
+
+#contactme-content .contactme-icons i {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+/* Start of media query for browser */
+@media screen and (min-width: 801px) {
+  #contactme-content h1 {
+    font-size: 36px;
+  }
+  #contactme-content h2 {
+    font-size: 32px;
+  }
+  #contactme-content p {
+    font-size: 20px;
+  }
+  #contactme-content .formspree {
+    max-width: 500px;
+    width: 40vw;
+  }
+  #contactme-content .contactme-icons {
+    width: 40%;
   }
 }
 

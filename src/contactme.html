@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Nunito+Sans&family=Scope+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="top">
+        <!-- Start of responsive side navbar -->
+        <nav class="navbar">
+            <!-- Home button icon -->
+            <div class="home-button">
+                <a href="index.html"><i class="fas fa-home"></i></a>
+            </div>
+            <!-- Nav links for navbar -->
+            <ul class="nav-links">
+                <li>
+                    <a href ="mainpage.html">Home</a>
+                </li>
+                <li>
+                    <a href ="aboutme.html">About</a>
+                </li>
+                <li>
+                    <a href ="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href ="contactme.html">Contact</a>
+                </li>
+                <li>
+                    <a href ="resume.html">Resume</a>
+                </li>
+            </ul>
+            <!-- "Burger" icon set up -->
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+        <!-- End of responsive side navbar -->
+
+        <!-- Flexbox container for positioning -->
+        <div class=container-positioner>
+            <!-- Start of contactme contents-->
+            <div class="page-container">
+                <article id="contactme-content">
+                    <h1>Contact Me!</h1>
+                    <h2>Thanks for dropping by!</h2>
+                    <p>Do drop me a message before you leave!</p>
+                    <p>I am always on the lookout for opportunities to collaborate and solve challenges.</p>
+                    <p>I will try to get back to you as soon as I can!</p>
+
+                    <!-- Form submission using formspree  -->
+                    <form class ="formspree"action="https://formspree.io/xqkyrabd" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name">
+                    
+                    <label for="email">Email:</label>
+                    <input type="text" name="email">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <button type="submit">Send</button>
+                  </form>
+
+                  <!-- GitHub, Twitter and Linkedin Icons+Links -->
+                <div class="contactme-icons">
+                    <a href="https://github.com/derricklai33"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/cout_Derrick"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/derrick-lai-bab2ab184/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                </article>       
+                <!-- End of aboutme contents --> 
+            </div>
+        </div>
+    <div>
+</body>
+
+<!-- Script for enabling fontawesome and javascript-->
+<footer>
+    <script src="https://kit.fontawesome.com/66bb1ac1cf.js" crossorigin="anonymous"></script>
+    <script src="style/javascript/animation.js"></script>
+</footer>
+</html>
