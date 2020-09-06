@@ -13,7 +13,7 @@ const navbarScroll = () => {
 
     const navbar = document.querySelector('.navbar');
 
-    var mq = window.matchMedia( "(max-width: 800px)" );
+    var mq = window.matchMedia( "(min-width: 800px)" );
 
     if (mq.matches){
         window.addEventListener('scroll', function () {

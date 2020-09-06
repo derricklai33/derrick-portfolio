@@ -1,3 +1,9 @@
+commit 69f74baf24af87f8cc60ed97d940a52fec741cf5
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sun Sep 6 20:00:26 2020 +1000
+
+    Final commit 3.0. Added slidedeck and README.md as part of submission. Folder is to be zipped and submitted.
+
 commit e2a774965efcae859ab073e34db8b367ee6185cb
 Author: Derrick Lai <derricklai33@hotmail.com>
 Date:   Sun Sep 6 18:30:08 2020 +1000
