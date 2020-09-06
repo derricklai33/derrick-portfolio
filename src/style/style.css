@@ -87,7 +87,7 @@ body {
   outline: none;
   text-decoration: none;
   color: #ffffff;
-  background: #e5e5e5ff;
+  background: #fca311;
   padding: 10px;
   border-radius: 5%;
 }
@@ -125,8 +125,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 65%;
   margin-bottom: 2vh;
+  padding: 3vh;
 }
 
 .homepage-container .social-media-icons i {
@@ -897,6 +897,92 @@ body {
     font-size: 24px;
   }
   #blog-content .blogpost-container li .blogpost-info p {
+    font-size: 20px;
+  }
+}
+
+#blogpost-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#blogpost-content a {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: block;
+  font-family: "Scope One", serif;
+  color: #000000ff;
+  font-size: 14px;
+  text-align: center;
+  margin: 2vh 5vw;
+  background-color: #fca311;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 0.5%;
+}
+
+#blogpost-content img {
+  border-radius: 15px;
+  width: 50vw;
+}
+
+#blogpost-content h1 {
+  display: block;
+  color: #fca311;
+  font-size: 28px;
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  margin: 2vh 2vw;
+}
+
+#blogpost-content h2 {
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  color: #e5e5e5ff;
+  font-size: 20px;
+  text-align: center;
+  margin: 2vh 5vw;
+}
+
+#blogpost-content p {
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  color: #e5e5e5ff;
+  font-size: 18px;
+  text-align: center;
+  margin: 2vh 2vw;
+  padding: 0 2vw;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 801px) {
+  #blogpost-content a {
+    margin: 10px;
+  }
+  #blogpost-content img {
+    width: 20vw;
+  }
+  #blogpost-content h1 {
+    font-size: 36px;
+  }
+  #blogpost-content h2 {
+    font-size: 24px;
+  }
+  #blogpost-content p {
     font-size: 20px;
   }
 }
