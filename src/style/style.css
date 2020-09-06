@@ -87,7 +87,7 @@ body {
   outline: none;
   text-decoration: none;
   color: #ffffff;
-  background: #fca311;
+  background: #e5e5e5ff;
   padding: 10px;
   border-radius: 5%;
 }
@@ -125,8 +125,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 65%;
   margin-bottom: 2vh;
-  padding: 3vh;
 }
 
 .homepage-container .social-media-icons i {
