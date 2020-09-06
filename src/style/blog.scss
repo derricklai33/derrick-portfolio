@@ -1,0 +1,119 @@
+#blog-content  {
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1  {
+        display: block;
+        color: $orange-web;
+        font-size: 28px;
+        font-family: $font-1;
+        text-align: center;
+        margin: 2vh 2vw;
+    }
+
+    h2  {
+        display: block;
+        font-family: $font-2;
+        color: $black;
+        font-size: 24px;
+        text-align: center;
+        margin: 2vh 5vw;
+        background-color: $orange-web;
+    }
+
+    p {
+        display: block;
+        font-family: $font-2;
+        color: $platinum;
+        font-size: 18px;
+        text-align: center;
+        margin: 2vh 2vw;
+        padding: 0 2vw;
+        text-decoration: none;
+    }
+    
+    .blogpost-container  {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 2px;
+        border-color: $orange-web;
+        border-radius: 10px; 
+        margin: 2vh;
+        
+        li  {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 1vh 0;
+
+            div  {
+                width: 50vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 3%;
+                border: solid;
+                border-color: $orange-web; 
+                background: $black;        
+            }
+
+            .blogpost-info  {
+                display: flex;
+                flex-direction: column;
+                border-radius: 0 0 5px 5px;
+                height: 120px;
+
+                h3  {
+                    display: block;
+                    font-family: $font-2;
+                    color: $black;
+                    font-size: 16px;
+                    text-align: center;
+                    background-color: $orange-web;
+                }
+                
+                p  {
+                    font-size: 14px;
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            .blogpost-img  {
+                border-radius: 5px 5px 0 0;
+
+                img {
+                    width: 50vw;
+                    height: 20%;
+                    margin: 5%;
+                }
+            }
+
+            
+
+            
+            
+                
+            
+                   
+                
+                
+                 
+            
+
+        
+        }
+
+    }
+    
+    
+}

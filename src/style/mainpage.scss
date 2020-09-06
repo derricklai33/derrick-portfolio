@@ -16,6 +16,16 @@
         margin: 2vh 2vw;
     }
 
+    h2  {
+        display: block;
+        color: $black;
+        font-size: 28px;
+        font-family: $font-1;
+        text-align: center;
+        margin: 2vh 2vw;
+        background-color: $orange-web
+    }
+
     p {
         display: block;
         font-family: $font-2;
@@ -79,6 +89,11 @@
         h1  {
             font-size: 36px;
             margin: 3vh 3vw;  
+        }
+
+        h2  {
+            font-size: 32px;
+            margin: 3vh 3vw;
         }
     
         p  {
