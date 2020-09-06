@@ -1,0 +1,173 @@
+commit e2a774965efcae859ab073e34db8b367ee6185cb
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sun Sep 6 18:30:08 2020 +1000
+
+    Final commit 2.0. Included SRI sha-384 onto every html file.
+
+commit a4edbf8eda81cc587037b7a52bd99f5e516c0037
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sun Sep 6 18:05:18 2020 +1000
+
+    Final commit for portfolio assignment. Updated comments and fixed up spacing.
+
+commit 2076e55ccfae5b608e67b980e16b1fbce8b71a45
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sun Sep 6 17:53:39 2020 +1000
+
+    Tested website using Lighthouse and included meta tags for all html files to achieve higher score.
+
+commit 3be9ba84b0f3394d6548b7d18db48c520d0f9c45
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sun Sep 6 17:33:47 2020 +1000
+
+    Final changes to index.html responsiveness. Added media query to suit responsiveness for browser version.
+
+commit 370336563d071d19c983503cf867e55c2a62ed62
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sun Sep 6 17:16:54 2020 +1000
+
+    Final change for index.html for responsiveness mobile version.
+
+commit e648d7babb6c8932a93747abdbbd1505f28d0743
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sun Sep 6 17:05:48 2020 +1000
+
+    Fixed up responsiveness for index.html to scale properly and adjust positions of elements to reflect responsiveness in mobile version.
+
+commit 49d357525befdd0dd336807bd5306b35e5a3813c
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sun Sep 6 16:50:02 2020 +1000
+
+    Renamed homepage.scss into index.scss to keep consistency and to avoid confusion.
+
+commit 988a1d3dafec60d92b925a5f4d83b6e5db32cea5
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sun Sep 6 16:48:19 2020 +1000
+
+    Completed mock blogposts for both browser and mobile version. Responsiveness test was satisfactory for both mobile and browser version.
+
+commit e70a0d0d3371bce4ffabdaf5ba3f77f4443101fc
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sun Sep 6 16:01:34 2020 +1000
+
+    Completed browser version for blog post page. Tested responsiveness for both mobile and browser version for blog post page.
+
+commit 1fe63843b15966b8c86595113127755541a2dd97
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sun Sep 6 13:10:34 2020 +1000
+
+    Completed blogpost page for mobile version
+
+commit 1c7933892938c0bc96f2b5ca6b71fcb36bcdcca7
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sat Sep 5 21:30:15 2020 +1000
+
+    Completed contact me page and adjusted for responsiveness in both mobile and browser version.
+
+commit 987515928da2cdbb6592f4dbe26c746eb7a7226c
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sat Sep 5 18:46:36 2020 +1000
+
+    Updated javascript to fix onscroll effect bug using media query.
+
+commit 1f11720fcbc5f5fc4afb259769e5a9ea4fee7d15
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sat Sep 5 18:08:17 2020 +1000
+
+    Completed aboutme page and adjusted responsiveness for both mobile and desktop. Replaced Vball.jpg with better resolution to accomodate for browser.
+
+commit 6ef525ec7cf1e250392db41e7cd324b417fb6e26
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sat Sep 5 15:18:02 2020 +1000
+
+    Completed browser version of mainpage and also updated responsiveness for both mobile and browser version of mainpage.
+
+commit 6766df31b1f598e40e54c033b27f68202e8385d6
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Fri Sep 4 22:08:59 2020 +1000
+
+    Completed mobile version for mainpage. Made changes for layout.scss for responsiveness.
+
+commit 68fe93c6b755ae43b1539dff4bcc0f7f7d5782e9
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Fri Sep 4 15:40:47 2020 +1000
+
+    Added hover animation on navbar and on-scroll effect (javascript) on navbar in browser mode
+
+commit 58f4cf1683637ae52716160ba25783e5875bdc84
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Fri Sep 4 13:33:47 2020 +1000
+
+    Set box container sizes to reflect on different devices.
+
+commit 658f4d3dd3a1db5ffc3b0c02236240e640a91833
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Thu Sep 3 19:22:44 2020 +1000
+
+    Updated mainpage.html with content and icons and final touch up on the navbar + layout scss.
+
+commit 4883448fd7df064729f35113c3f9178dfad9192f
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Thu Sep 3 17:36:21 2020 +1000
+
+    Renamed homepage.scss to layout.scss to globalize the layout used throughout the website and readjusted box container values.
+
+commit 304a2fe860c2326b68094fcb304886de903db5ff
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Thu Sep 3 14:29:13 2020 +1000
+
+    Completed implementation of mobile navbar (with basic javascript for onclick effect) and basic template for browser version,
+
+commit cc6e2988e7879eb40bc5b5db2c3f0857ad88a4c6
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Tue Sep 1 21:13:25 2020 +1000
+
+    Initilized mainpage.html and setting up nav bar and 'burger' for side bar.
+
+commit 376815e4f7c7ca779568d668332341642c4659f4
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Tue Sep 1 20:06:46 2020 +1000
+
+    Final changes to homepage.scss elements to be more responsive.
+
+commit dd7d4ca8d2b422482df40110581f39c8ba1c326a
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Tue Sep 1 19:02:33 2020 +1000
+
+    Altered .homepage-container margin and min-height. Also adjusted margin for social icons to reflect on the changes.
+
+commit 79ffbebb14bb4795fd94f35373fdbc75766256c6
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Tue Sep 1 17:11:19 2020 +1000
+
+    Positioned and formatted social media tags and final rearrangements of main attributes.
+
+commit ef07cb6dfac0c6d59e71503f56d324784f9e3a21
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Tue Sep 1 16:58:45 2020 +1000
+
+    Positioned main components (Name, title and start button) and styled according to theme.
+
+commit cf2147b05338bf02f6e79d1e83ea530c1e9f332e
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Tue Sep 1 16:52:47 2020 +1000
+
+    Imported homepage into main stylesheet. Set content display to flexbox, positioned image and generated box shadow according to colour scheme.
+
+commit 1428f2675c242ecc5c09693ed4d4375de0c05bbd
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Tue Sep 1 16:46:55 2020 +1000
+
+    Initialized main stylesheet and global variables (Colour template and font family)
+
+commit 06e127fe0eb62a78b84ed8b0648b34ca0cab1a21
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Tue Sep 1 16:41:17 2020 +1000
+
+    Completed index.html for mainpage
+
+commit 3fde1d237783b4ab95f6da0921cb563f03aa6e9a
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Tue Sep 1 16:38:02 2020 +1000
+
+    Added images for homepage and about me page
