@@ -54,6 +54,11 @@
             align-items: center;
             margin: 1vh 0;
 
+            a  {
+                display: inline-block;
+                text-decoration: none;
+            }
+
             div  {
                 width: 50vw;
                 display: flex;
@@ -70,6 +75,7 @@
                 flex-direction: column;
                 border-radius: 0 0 5px 5px;
                 height: 120px;
+                justify-content: flex-start;
 
                 h3  {
                     display: block;
@@ -94,26 +100,81 @@
                 img {
                     width: 50vw;
                     height: 20%;
-                    margin: 5%;
+                    margin: 5% 5% 5% 0;
                 }
             }
 
-            
-
-            
-            
-                
-            
-                   
-                
-                
-                 
-            
-
-        
         }
 
     }
-    
-    
+}
+
+/* Start of media query for browser */ 
+@media screen and (min-width:801px){
+    #blog-content  {
+
+        h1  {
+            font-size: 36px;
+        }
+
+        h2  {
+            font-size: 32px;
+        }
+
+        p  {
+            font-size: 20px;
+        }
+
+        .blogpost-container  {
+
+            li  {
+                width: 20vw;
+                margin: 3%;
+
+                div  {
+                    width: 20vw;
+                }
+
+                .blogpost-img  {
+
+                    img  {
+                        width: 15vw;
+                    }
+                }
+                
+                .blogpost-info  {
+                    height: 150px;
+
+                    h3  {
+                        font-size: 20px;
+                    }
+
+                    p  {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+        }
+    } 
+}
+/* End of media query for browser */ 
+
+@media screen and (min-width: 1599px){
+    #blog-content  {
+        .blogpost-container  {
+            li  {
+                .blogpost-info  {
+                    h3  {
+                        font-size: 24px;
+                    }
+            
+                    p  {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+        }
+    }
 }

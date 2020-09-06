@@ -339,7 +339,6 @@ body {
 }
 
 /* End of Javascript functions */
-/* Start of settings for mobile by default */
 #mainpage-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,7 +437,6 @@ body {
   margin: 20px;
 }
 
-/* End of mobile settings by default */
 /* Start of media query for browser */
 @media screen and (min-width: 801px) {
   #mainpage-content {
@@ -567,6 +565,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Start of submit form settings */
   /* Social media icons */
 }
 
@@ -607,6 +606,7 @@ body {
   padding: 1vh;
   border-radius: 15px;
   margin: 5vh 1vh;
+  /* Start of submit form settings */
   /* Start of button animation */
   /* End of button animation */
 }
@@ -796,6 +796,11 @@ body {
   margin: 1vh 0;
 }
 
+#blog-content .blogpost-container li a {
+  display: inline-block;
+  text-decoration: none;
+}
+
 #blog-content .blogpost-container li div {
   width: 50vw;
   display: -webkit-box;
@@ -823,6 +828,9 @@ body {
           flex-direction: column;
   border-radius: 0 0 5px 5px;
   height: 120px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 #blog-content .blogpost-container li .blogpost-info h3 {
@@ -848,6 +856,48 @@ body {
 #blog-content .blogpost-container li .blogpost-img img {
   width: 50vw;
   height: 20%;
-  margin: 5%;
+  margin: 5% 5% 5% 0;
+}
+
+/* Start of media query for browser */
+@media screen and (min-width: 801px) {
+  #blog-content h1 {
+    font-size: 36px;
+  }
+  #blog-content h2 {
+    font-size: 32px;
+  }
+  #blog-content p {
+    font-size: 20px;
+  }
+  #blog-content .blogpost-container li {
+    width: 20vw;
+    margin: 3%;
+  }
+  #blog-content .blogpost-container li div {
+    width: 20vw;
+  }
+  #blog-content .blogpost-container li .blogpost-img img {
+    width: 15vw;
+  }
+  #blog-content .blogpost-container li .blogpost-info {
+    height: 150px;
+  }
+  #blog-content .blogpost-container li .blogpost-info h3 {
+    font-size: 20px;
+  }
+  #blog-content .blogpost-container li .blogpost-info p {
+    font-size: 18px;
+  }
+}
+
+/* End of media query for browser */
+@media screen and (min-width: 1599px) {
+  #blog-content .blogpost-container li .blogpost-info h3 {
+    font-size: 24px;
+  }
+  #blog-content .blogpost-container li .blogpost-info p {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
