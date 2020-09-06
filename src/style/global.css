@@ -1,5 +1,11 @@
+/* Reset margin and border of html  */
 * {
   margin: 0;
   padding: 0;
+}
+
+/* Setting body background colour */
+body {
+  background-color: #000000ff;
 }
 /*# sourceMappingURL=global.css.map */

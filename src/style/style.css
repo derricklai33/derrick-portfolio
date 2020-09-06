@@ -41,7 +41,7 @@ body {
   -webkit-box-shadow: 0px 0px 14px 6px rgba(252, 163, 17, 0.75);
   box-shadow: 0px 0px 14px 6px rgba(252, 163, 17, 0.75);
   border-radius: 15px;
-  width: 200px;
+  width: 40vw;
 }
 
 .homepage-container .homepage-main {
@@ -87,7 +87,7 @@ body {
   outline: none;
   text-decoration: none;
   color: #ffffff;
-  background: #e5e5e5ff;
+  background: #fca311;
   padding: 10px;
   border-radius: 5%;
 }
@@ -119,19 +119,29 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 65%;
   margin-bottom: 2vh;
 }
 
 .homepage-container .social-media-icons i {
   color: #ffffff;
   font-size: 40px;
+  margin: 3vh;
+}
+
+.homepage-container .social-media-icons i:hover {
+  color: #fca311;
+}
+
+@media screen and (min-width: 801px) {
+  .homepage-container .homepage-img img {
+    width: 25vw;
+  }
 }
 
 /* Start of Navbar settings */

@@ -9,8 +9,14 @@ $font-1: 'Kanit', sans-serif;
 $font-2: 'Nunito Sans', sans-serif;
 $font-3: 'Scope One', serif;
 
-// Reset margin and border of html 
+/* Reset margin and border of html  */
 *   {
     margin: 0;
     padding: 0;
+}
+
+/* Setting body background colour */
+body {
+    
+    background-color: $black;
 }
