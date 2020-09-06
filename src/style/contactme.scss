@@ -1,3 +1,4 @@
+/* Start of mobile/default settings for contactme page */
 #contactme-content  {
     display: flex;
     flex: wrap;
@@ -66,7 +67,7 @@
             background-color: $platinum;
             
         }
-        /* Start of submit form settings */
+        /* End of submit form settings */
 
         /* Start of button animation */
         button  {
@@ -117,8 +118,8 @@
             font-size: 40px;
         }
     }
-    
 }
+/* End of mobile/default settings for contactme page */
 
 /* Start of media query for browser */
 @media screen and (min-width: 801px){

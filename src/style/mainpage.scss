@@ -1,3 +1,4 @@
+/* Start of mobile/default setting for mainpage */
 #mainpage-content   {
     display: flex;
     flex: wrap;
@@ -53,6 +54,7 @@
         margin: 3vh 3vw;
     }
 
+    /* Skill icon images */
     .skill-icon  {
         list-style: none;
         display: flex;
@@ -76,8 +78,8 @@
             }
         }
     }
-
 }
+/* Start of mobile/default setting for mainpage */
 
 /* Start of media query for browser */
 @media screen and (min-width: 801px){

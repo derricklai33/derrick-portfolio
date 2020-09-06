@@ -1,3 +1,4 @@
+/* Start of mobile/default settings for startpage */
 .homepage-container {
     display:flex;
     flex-direction: column;
@@ -88,6 +89,7 @@
         }    
     }
 
+    /* Start of social media icon settings */
     .social-media-icons {
         display: flex;
         justify-content: center;
@@ -105,8 +107,11 @@
             }
         }
     }
+    /* End of social media icon settings */
 }    
+/* End of mobile/default settings for startpage */
 
+/* Start of edia query settinsg for browser */
 @media screen and (min-width:801px){
     .homepage-container  {
         width: 40vw;
@@ -134,3 +139,4 @@
         }
     }
 }
+/* End of edia query settinsg for browser */
