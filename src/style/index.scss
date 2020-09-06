@@ -6,6 +6,8 @@
     border-radius: 15px;
     min-height: 85vh;
     width: 70vw;
+    justify-content: center;
+    align-items: center;
     
 
     .homepage-img {
@@ -107,9 +109,27 @@
 
 @media screen and (min-width:801px){
     .homepage-container  {
+        width: 40vw;
+
         .homepage-img  {
             img  {
-                width: 25vw;
+                width: 20vw;
+            }
+        }
+
+        .homepage-main  {
+    
+            .homepage-pharagraph    {
+                margin: 10px;
+                text-align: center;
+
+                h1  {
+                    font-size: 36px;
+                }
+        
+                p  {
+                    font-size: 32px;
+                }
             }
         }
     }

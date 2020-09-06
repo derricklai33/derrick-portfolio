@@ -22,6 +22,12 @@ body {
   border-radius: 15px;
   min-height: 85vh;
   width: 70vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .homepage-container .homepage-img {
@@ -141,8 +147,21 @@ body {
 }
 
 @media screen and (min-width: 801px) {
+  .homepage-container {
+    width: 40vw;
+  }
   .homepage-container .homepage-img img {
-    width: 25vw;
+    width: 20vw;
+  }
+  .homepage-container .homepage-main .homepage-pharagraph {
+    margin: 10px;
+    text-align: center;
+  }
+  .homepage-container .homepage-main .homepage-pharagraph h1 {
+    font-size: 36px;
+  }
+  .homepage-container .homepage-main .homepage-pharagraph p {
+    font-size: 32px;
   }
 }
 
