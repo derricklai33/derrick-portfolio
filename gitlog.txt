@@ -1,3 +1,9 @@
+commit aaf0f80e4b5fba8b6f169bd3e7ab698335440b43
+Author: Derrick Lai <derricklai33@hotmail.com>
+Date:   Sun Sep 6 21:17:03 2020 +1000
+
+    Final commit 4.0. Fixed media query in javascript to refect onscroll effect.
+
 commit 69f74baf24af87f8cc60ed97d940a52fec741cf5
 Author: Derrick Lai <derricklai33@hotmail.com>
 Date:   Sun Sep 6 20:00:26 2020 +1000
